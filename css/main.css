@@ -1,0 +1,229 @@
+/* white #c9c1ac */
+/* red color */
+
+.info{
+    background: #F3F0C5;
+}
+
+body{
+    font-family: 'IM Fell Great Primer', serif;
+    font-family: 'Shadows Into Light', cursive;
+    color:#c9c1ac;
+    background: url(../img/banner.jpeg)center/cover fixed no-repeat;
+    
+}
+
+.primary-color{
+    color: #AB1F28;
+}
+
+.info h2{
+    word-spacing: 0.6rem;
+}
+
+.info a {
+    transition: color 2s ease-in-out;
+}
+
+.info a:hover {
+    color: #242424;
+}
+
+/*##################header####################*/
+
+#header{
+    min-height: calc(100vh - 94px);
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/lanche10.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position:relative;
+}
+
+.height-90{
+    min-height: calc(100vh - 94px);
+}
+
+.banner h1{
+    border-top: 6px dotted #F3F0C5;
+    border-bottom: 6px dotted #F3F0C5;
+    animation: fromLeft;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fromLeft{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(30px);
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.main-btn{
+    color: #AB1F28;
+    font-size: 2rem;
+    border: 2px solid #AB1F28;
+    transition: all 1s ease-in-out;
+}
+
+.main.btn:hover{
+    color: #242424;
+    border: 2px solid #F3F0C5;
+    background: #F3F0C5;
+}
+
+.tico-btn{
+    animation: fromRight;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fromRight{
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(-30px);
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.header-link{
+    display: inline-block;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    background: #F3F0C5;
+    border-radius: 10px;
+    transition: all 2s ease;
+    animation: fromBottom;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+
+header-link{
+    color: #242424;
+}
+
+@keyframes fromBottom{
+    0%{
+        transform: translateY(-10px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+
+
+/*############ menu items ############*/
+
+.item-container{
+    position: relative;
+    /*for the link*/
+    overflow: hidden;
+    background: linear-gradient(rgb(0,0,0), rgb(0,0,0));
+    transition: all 2s ease;
+    
+}
+
+.item-img{
+    transition: all 2s ease;
+    
+}
+
+.item-container:hover .item-img{
+    transform: scale(1.2);
+    opacity: 0.5;
+    
+}
+
+.item-link{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #AB1F28;
+    font-size: 2rem;
+    border-top: 3px solid #AB1F28;
+    border-bottom: 3px solid #AB1F28;
+    transition: all 2s ease;
+    opacity: 0;
+}
+
+.item-container:hover .item-link{
+    opacity: 1;
+}
+
+.item-link:hover{
+    color: #c9c1ac;
+    border: 3px solid #F3F0C5;
+    background: #F3F0C5;
+    color: #F3F0C5;
+}
+
+.item-container:hover{
+    outline: 10px solid #AB1F28;
+    outline-offset: 0.8rem;
+}
+
+
+
+/*##################menu########################*/
+#menu{
+    background:linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7)), url(../img/lanche.jpg)center/cover fixed
+        no-repeat;
+}
+.special{
+    border: 3px solid #AB1F28;
+    position: relative;
+}
+
+.special-text{
+    position: absolute;
+    top: 0;
+    right: 10%;
+    background: #AB1F28;
+    padding: 0 0.4rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
