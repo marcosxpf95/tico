@@ -9,7 +9,7 @@ body{
     font-family: 'IM Fell Great Primer', serif;
     font-family: 'Shadows Into Light', cursive;
     color:#c9c1ac;
-    background: url(../img/banner.jpeg)center/cover fixed no-repeat;
+    background: url(../img/black.jpeg)center/cover fixed no-repeat;
     
 }
 
@@ -179,7 +179,7 @@ header-link{
     color: #c9c1ac;
     border: 3px solid #F3F0C5;
     background: #F3F0C5;
-    color: #F3F0C5;
+    color: #AB1F28;
 }
 
 .item-container:hover{
@@ -207,6 +207,57 @@ header-link{
     padding: 0 0.4rem;
 }
 
+/*#####################about###############*/
+.about-pictures{
+    position: relative;
+}
+
+.about-image{
+    position: absolute;
+    width: 150px;
+    transition: all 2s ease;
+    opacity: 0.9;
+}
+
+.img-1{
+    left: 0%;
+    top: 0%;
+    
+}
+.img-2{
+    left: 20%;
+    top: 20%;
+    z-index: 10;
+    
+}
+.img-3{
+    left: 40%;
+    top: 45%;
+    z-index: 20;
+    
+}
+.img-4{
+    left: 40%;
+    top: 0%;
+    
+}
+.img-5{
+    left: 0%;
+    top: 45%;
+    
+}
+
+.about-image:hover{
+    outline: 10px solid #AB1F28;
+    outline-offset: 0.8rem;
+    transform: scale(1.3) rotate(20deg);
+    z-index: 30;
+    opacity: 1;
+}
+
+.about-pictures:hover .about-image:not(:hover){
+    opacity: 0.5;
+}
 
 
 
